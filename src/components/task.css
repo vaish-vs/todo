@@ -1,0 +1,22 @@
+.main-content{
+    margin-top: 20px;
+    background-color: transparent;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.small-icon{
+    float: right;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: all 250ms ease-in-out !important;
+}
+.small-icon:hover{
+    background-color: #0d0c11;
+}
+
+.small-icon:active{
+    transform: scale(0.5);
+    background-color: transparent;
+}

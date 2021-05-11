@@ -1,0 +1,39 @@
+.form-inner{
+    background-color: #212026;
+    color: #fafafa;
+    border-radius: 20px;
+    height: 30vh;
+    width: fit-content;
+    padding: 30px 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+.input-field-login{
+    float: right !important;
+}
+
+.login-btn{
+   border-radius: 10px;
+   height: 2rem;
+   width: 5rem;
+   margin-top: 20px;
+   margin-left: 50%;
+   transform: translate(-50%);
+   background-color: #0d0c11;
+   border: 0;
+   color: #fafafa;
+   font-family: 'Roboto', sans-serif;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.login-label{
+    margin-left: -10px;
+}
