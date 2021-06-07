@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './login.css'
 
 
-function LoginForm({Login, error}) {
+function LoginForm({Login}) {
 
     const [details, setDetails] = useState({name:"", password:""})
 

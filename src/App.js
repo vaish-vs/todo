@@ -11,11 +11,10 @@ function App() {
   }
 
   const [user, setUser] = useState({name:"", password:""} )
-  const [error, setError] = useState("")
   
   const Login = details =>{
     console.log(details)
-    if(details.name == adminUser.userID && details.password == adminUser.password){
+    if(details.name === adminUser.userID && details.password === adminUser.password){
       console.log("Logged in")
       setUser({
         name: details.name,
@@ -39,7 +38,7 @@ function App() {
     {(user.name !=="") ? (
         <Dashboard Logout={Logout}/>
     ): (
-      <LoginForm Login={Login} error={error}/>
+      <LoginForm Login={Login}/>
     )}
       
     </div>

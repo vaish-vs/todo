@@ -30,25 +30,22 @@ function Dashboard({Logout}){
         Logout()
       }
 
-      const alltodos = [];
-
       const [todos, setTodos] = useState([]);
 
-      function getTodo(){
-        firebase.firestore().collection("todos").onSnapshot(function (query){
-            setTodos(
-              query.docs.map((doc) =>({
-                id: doc.id,
-                todo: doc.data().todo,
-                inProgress: doc.data().inProgress
-              }))
-            ) //setTodo end
-        })
-
-        console.log(todos);
-      }
+      
       
       useEffect(() => {
+        function getTodo(){
+          firebase.firestore().collection("todos").onSnapshot(function (query){
+              setTodos(
+                query.docs.map((doc) =>({
+                  id: doc.id,
+                  todo: doc.data().todo,
+                  inProgress: doc.data().inProgress
+                }))
+              ) //setTodo end
+          })
+        }
         getTodo();
       }, [])
      
